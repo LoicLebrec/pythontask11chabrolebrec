@@ -1,6 +1,7 @@
 #load the data and load the correct packages:prject set up.
 
 import pandas as pd
+import matplotlib.pyplot as plt
 
 df = pd.read_csv("data/speed-dating.csv")
 # put your own path here in this case its a relative path to the data folder in the project directory.
@@ -33,3 +34,17 @@ print(means.loc[1].sort_values(ascending=False).head(3))
 #Are do variables relate? possible typo, but is this how do variables relate?
 # correlation matrix of the numeric variables in the dataset.
 print(df.corr(numeric_only=True))
+# make a nice graph out of it, 
+plt.figure(figsize=(10, 8))
+plt.imshow(corr, cmap="RdBu_r", vmin=-1, vmax=1)
+plt.colorbar()
+plt.xticks(range(len(corr)), corr.columns, rotation=90)
+plt.yticks(range(len(corr)), corr.columns)
+plt.title("Correlation matrix")
+plt.tight_layout()
+plt.show()
+# let on the side for the moment bc should be a typo
+# question 4: 
+# Do people that value attractivenesss also value ambition?
+# correlation between importance_attractive and importance_ambitious
+print(df["importance_attractive"].corr(df["importance_ambitious"]))
