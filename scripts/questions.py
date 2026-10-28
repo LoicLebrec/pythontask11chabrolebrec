@@ -59,3 +59,8 @@ print(df["importance_attractive"].corr(df["importance_ambitious"]))
 people = df.drop_duplicates("iid")
 
 print(people[attributes].corrwith(people["age"]))
+#maybe add controlls or more serious approach.
+
+# question 6:
+# Are the ethnicity and religion importances related?
+print(people["importance_race"].corr(people["importance_religion"]))
