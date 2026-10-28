@@ -28,3 +28,8 @@ print(means.loc[0].sort_values(ascending=False).head(3))
 print(means.loc[1].sort_values(ascending=False).head(3))
 
 # no def of the gender so we can only say 0 or 1.
+
+# question 3:
+#Are do variables relate? possible typo, but is this how do variables relate?
+# correlation matrix of the numeric variables in the dataset.
+print(df.corr(numeric_only=True))
