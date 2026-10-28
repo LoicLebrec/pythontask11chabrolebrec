@@ -33,14 +33,18 @@ print(means.loc[1].sort_values(ascending=False).head(3))
 # question 3:
 #Are do variables relate? possible typo, but is this how do variables relate?
 # correlation matrix of the numeric variables in the dataset.
-print(df.corr(numeric_only=True))
-# make a nice graph out of it, 
-plt.figure(figsize=(10, 8))
+people = df.drop_duplicates("iid")
+
+attributes = ["importance_attractive", "importance_sincere", "importance_intelligent",
+              "importance_fun", "importance_ambitious", "importance_shared_interests"]
+
+corr = people[attributes].corr()
+
 plt.imshow(corr, cmap="RdBu_r", vmin=-1, vmax=1)
 plt.colorbar()
-plt.xticks(range(len(corr)), corr.columns, rotation=90)
-plt.yticks(range(len(corr)), corr.columns)
-plt.title("Correlation matrix")
+plt.xticks(range(6), attributes, rotation=90)
+plt.yticks(range(6), attributes)
+plt.title("Correlation between attribute weights")
 plt.tight_layout()
 plt.show()
 # let on the side for the moment bc should be a typo
