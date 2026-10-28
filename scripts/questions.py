@@ -1,4 +1,4 @@
-#load the data and load the correct packages:prject set up.
+#load the data and load the correct packages:project set up.
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -13,7 +13,8 @@ print(df.columns)
 #What is the average number of matches per participant?
 matches_per_person = df.groupby("iid")["match"].sum()
 print(matches_per_person.mean())
-# group the data by participant id (iid) and sum the matches for each participant, then calculate the mean of those sums to get the average number of matches per participant.
+# group the data by participant id (iid) and sum the matches for each participant, 
+# then calculate the mean of those sums to get the average number of matches per participant.
 
 ## question 2:
 
