@@ -52,3 +52,10 @@ plt.show()
 # Do people that value attractivenesss also value ambition?
 # correlation between importance_attractive and importance_ambitious
 print(df["importance_attractive"].corr(df["importance_ambitious"]))
+
+# question 5:
+# Do preferences change with age?
+# drop duplicates to get unique participants
+people = df.drop_duplicates("iid")
+
+print(people[attributes].corrwith(people["age"]))
