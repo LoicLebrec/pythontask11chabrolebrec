@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{Cross-validated comparison of the models (5 stratified folds, training set)}
+\label{tab:q8_model_comparison}
+\begin{tabular}{lrrrr}
+\toprule
+ & balanced acc & roc auc & avg precision & brier \\
+\midrule
+always no match (baseline) & 0.500 & 0.500 & 0.157 & 0.157 \\
+logistic regression & 0.566 & 0.738 & 0.390 & 0.123 \\
+logistic regression, balanced weights & 0.668 & 0.741 & 0.420 & 0.194 \\
+random forest & 0.501 & 0.710 & 0.370 & 0.126 \\
+\bottomrule
+\end{tabular}
+\end{table}

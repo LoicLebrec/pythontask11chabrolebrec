@@ -1,0 +1,45 @@
+\begin{table}[htbp]
+\centering
+\scriptsize
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}                &      match       & \textbf{  R-squared:         } &     0.008   \\
+\textbf{Model:}                        &       OLS        & \textbf{  Adj. R-squared:    } &     0.001   \\
+\textbf{Method:}                       &  Least Squares   & \textbf{  F-statistic:       } &     1.234   \\
+\textbf{Date:}                         & Sat, 21 Nov 2026 & \textbf{  Prob (F-statistic):} &    0.291    \\
+\textbf{Time:}                         &     16:07:19     & \textbf{  Log-Likelihood:    } &   -318.96   \\
+\textbf{No. Observations:}             &         800      & \textbf{  AIC:               } &     649.9   \\
+\textbf{Df Residuals:}                 &         794      & \textbf{  BIC:               } &     678.0   \\
+\textbf{Df Model:}                     &           5      & \textbf{                     } &             \\
+\textbf{Covariance Type:}              &    nonrobust     & \textbf{                     } &             \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                                       & \textbf{coef} & \textbf{std err} & \textbf{t} & \textbf{P$> |$t$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{const}                         &       0.1860  &        0.348     &     0.534  &         0.594        &       -0.498    &        0.870     \\
+\textbf{importance\_sincere}           &      -0.0019  &        0.006     &    -0.300  &         0.764        &       -0.014    &        0.010     \\
+\textbf{importance\_intelligent}       &       0.0093  &        0.008     &     1.202  &         0.230        &       -0.006    &        0.025     \\
+\textbf{importance\_fun}               &      -0.0071  &        0.007     &    -1.047  &         0.295        &       -0.020    &        0.006     \\
+\textbf{importance\_ambitious}         &       0.0030  &        0.005     &     0.630  &         0.529        &       -0.006    &        0.012     \\
+\textbf{importance\_shared\_interests} &      -0.0063  &        0.004     &    -1.473  &         0.141        &       -0.015    &        0.002     \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lclc}
+\textbf{Omnibus:}       & 257.584 & \textbf{  Durbin-Watson:     } &     1.968  \\
+\textbf{Prob(Omnibus):} &   0.000 & \textbf{  Jarque-Bera (JB):  } &   557.176  \\
+\textbf{Skew:}          &   1.881 & \textbf{  Prob(JB):          } & 1.03e-121  \\
+\textbf{Kurtosis:}      &   4.598 & \textbf{  Cond. No.          } &  1.03e+03  \\
+\bottomrule
+\end{tabular}
+%\caption{OLS Regression Results}
+\end{center}
+
+Notes: \newline
+ [1] Standard Errors assume that the covariance matrix of the errors is correctly specified. \newline
+ [2] The condition number is large, 1.03e+03. This might indicate that there are \newline
+ strong multicollinearity or other numerical problems.
+\caption{OLS of match on attribute weights (baseline: attractive)}
+\label{tab:q7_ols}
+\end{table}

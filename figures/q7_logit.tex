@@ -1,0 +1,29 @@
+\begin{table}[htbp]
+\centering
+\scriptsize
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}    &      match       & \textbf{  No. Observations:  } &      400    \\
+\textbf{Model:}            &      Logit       & \textbf{  Df Residuals:      } &      396    \\
+\textbf{Method:}           &       MLE        & \textbf{  Df Model:          } &        3    \\
+\textbf{Date:}             & Sat, 21 Nov 2026 & \textbf{  Pseudo R-squ.:     } &  0.01788    \\
+\textbf{Time:}             &     16:07:19     & \textbf{  Log-Likelihood:    } &   -169.43   \\
+\textbf{converged:}        &       True       & \textbf{  LL-Null:           } &   -172.51   \\
+\textbf{Covariance Type:}  &     cluster      & \textbf{  LLR p-value:       } &   0.1036    \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                           & \textbf{coef} & \textbf{std err} & \textbf{z} & \textbf{P$> |$z$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{const}             &      -1.6538  &        0.380     &    -4.350  &         0.000        &       -2.399    &       -0.909     \\
+\textbf{preferences\_diff} &       0.0113  &        0.020     &     0.559  &         0.576        &       -0.028    &        0.051     \\
+\textbf{age\_gap}          &      -0.0101  &        0.048     &    -0.209  &         0.834        &       -0.105    &        0.085     \\
+\textbf{common\_race}      &      -0.7007  &        0.399     &    -1.754  &         0.079        &       -1.483    &        0.082     \\
+\bottomrule
+\end{tabular}
+%\caption{Logit Regression Results}
+\end{center}
+\caption{Logit of match on dyad variables, two-way clustered errors}
+\label{tab:q7_logit}
+\end{table}
